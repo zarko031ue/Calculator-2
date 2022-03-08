@@ -1,0 +1,30 @@
+  <div class="calculator">
+        <div class="calculator-screen" type="text">{{input}}</div>
+        <div class="calculator-screen" type="text">{{result}}</div>
+    <div class="calculator-keys">
+        <button type="button" class="operator" (click)="pressOperator('+')">+</button>
+        <button type="button" class="operator" (click)="pressOperator('-')">-</button>
+        <button type="button" class="operator" (click)="pressOperator('*')">&times;</button>   
+        <button type="button" class="operator" (click)="pressOperator('/')">&divide;</button>
+  
+        <button type="button" (click)="pressNum('7')">7</button>
+        <button type="button" (click)="pressNum('8')">8</button>
+        <button type="button" (click)="pressNum('9')">9</button>
+
+        <button type="button" (click)="pressNum('4')">4</button>
+        <button type="button" (click)="pressNum('5')">5</button>
+        <button type="button" (click)="pressNum('6')">6</button>
+        
+        <button type="button" (click)="pressNum('1')">1</button>
+        <button type="button" (click)="pressNum('2')">2</button>
+        <button type="button" (click)="pressNum('3')">3</button>
+
+        <button type="button" (click)="pressNum('0')">0</button>
+        
+        <button type="button" class="decimal" (click)="pressOperator('.')">.</button>
+        <button type="button" class="all-clear" (click)="allClear()">AC</button>
+    
+        <button class="equal-sing" type="button" (click)="getAnswer()">=</button>
+  
+    </div>
+  </div>
