@@ -42,11 +42,10 @@ export class CalculatorComponent implements OnInit {
 
   // Izvrsavanje zadate recunske operacije 
   getAnswer() {
-    this.result = eval(this.input);
-    this.input = '';
+  this.result = (new Function('return ' + this.input)())
+  this.input = '';
   }
-
-  // Ponistavanje svih unosa u kalkulatoru
+  
   allClear(){
     this.input= '';
     this.result= '';
